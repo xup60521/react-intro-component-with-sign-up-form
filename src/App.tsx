@@ -17,7 +17,7 @@ export default function App() {
         handleSubmit,
         reset,
     } = useForm<FormInput>();
-    const onSubmit: SubmitHandler<FormInput> = (data) => {
+    const onSubmit: SubmitHandler<FormInput> = () => {
         toast("Submit!", {
             className: "bg-c_Blue font-poppings text-white text-center",
         });
